@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🚀 PharmaClaw — Start Server",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",
+        "--reload",
+        "--port", "8000",
+        "--host", "0.0.0.0"
+      ],
+      "cwd": "${workspaceFolder}/apps/pharma-inventory",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/apps/pharma-inventory"
+      },
+      "envFile": "${workspaceFolder}/apps/pharma-inventory/.env",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "🌱 Seed Database",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/apps/pharma-inventory/db/seed.py",
+      "cwd": "${workspaceFolder}/apps/pharma-inventory",
+      "env": {
+        "PYTHONPATH": "${workspaceFolder}/apps/pharma-inventory"
+      },
+      "console": "integratedTerminal"
+    }
+  ]
+}

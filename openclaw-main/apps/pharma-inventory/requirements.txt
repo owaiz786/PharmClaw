@@ -1,0 +1,20 @@
+# PharmaClaw — Python dependencies
+# Install: pip install -r requirements.txt
+
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+sqlalchemy>=2.0.0
+httpx>=0.27.0
+python-multipart>=0.0.9
+python-dotenv>=1.0.0
+
+# ML / forecasting (lightweight, no heavy deps)
+# scikit-learn and pandas are optional — pure-Python fallback is built in
+# scikit-learn>=1.4.0
+# pandas>=2.2.0
+
+# Groq SDK (optional — httpx call is built-in, SDK adds convenience)
+# groq>=0.9.0
+
+# Vector DB for advanced RAG (optional — Phase 2)
+# chromadb>=0.5.0
